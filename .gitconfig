@@ -1,0 +1,31 @@
+[user]
+  email = konstunn@users.noreply.github.com
+  name = Konstantin G
+[core]
+  editor = /usr/bin/vi
+  pager = less -x4
+  autocrlf = input
+[push]
+  default = current
+[diff]
+  tool = vimdiff
+[alias]
+  br = branch
+  ds = diff --staged
+  st = status
+  l = log
+  rl = reflog
+  lp = log -p
+  pl = pull
+  d = diff
+  a = add
+  cm = commit
+  ch = checkout
+  f = fetch
+  chp = checkout -p
+  chb = checkout -b
+  ap = add -p
+  cmm = commit -m
+
+[include]
+  path = ~/.gitconfig-local
