@@ -10,11 +10,15 @@
 [diff]
   tool = vimdiff
 [alias]
+  m = merge
+  br = branch
   diffs = diff --staged
   ds = diff --staged
   st = status
   l = log
+  rl = reflog
   lp = log -p
+  pl = pull
   d = diff
   a = add
   cm = commit
@@ -25,3 +29,4 @@
   ap = add -p
   cmm = commit -m
   rst = reset
+
