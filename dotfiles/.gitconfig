@@ -1,31 +1,35 @@
 [user]
-  email = konstunn@users.noreply.github.com
   name = Konstantin G
+  email = konstunn@users.noreply.github.com
 [core]
   editor = /usr/bin/vi
   pager = less -x4
   autocrlf = input
-[push]
-  default = current
+[push] 
+  default = current  #
 [diff]
   tool = vimdiff
 [alias]
-  br = branch
+  d = diff
   ds = diff --staged
   st = status
   l = log
-  rl = reflog
   lp = log -p
+  rl = reflog
   pl = pull
-  d = diff
   a = add
-  cm = commit
+  ap = add -p
   ch = checkout
   f = fetch
   chp = checkout -p
+  br = branch
   chb = checkout -b
-  ap = add -p
+  cm = commit
   cmm = commit -m
+  commit-no-verify = commit --no-verify
+  push-skip-ci = push -o ci.skip
+[blame]
+  coloring = highlightRecent
 
 [include]
-  path = ~/.gitconfig-local
+  path = ~/.gitconfig-private
