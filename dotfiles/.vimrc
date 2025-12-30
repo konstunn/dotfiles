@@ -8,12 +8,12 @@ set nocompatible
 " required by Vundle
 filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+"set the runtime path to include Vundle and initialize
+"set rtp+=~/.vim/bundle/Vundle.vim
 
 "call vundle#begin()
 
-" let Vundle manage Vundle, required
+"let Vundle manage Vundle, required
 "Plugin 'VundleVim/Vundle.vim'
 
 "Plugin 'airblade/vim-gitgutter'
@@ -37,7 +37,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "Plugin 'altercation/vim-colors-solarized'
 
 " syntax checking hacks for vim
-" "Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 
 "
 "Plugin 'jalvesaq/Nvim-R'
@@ -57,15 +57,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 "Plugin 'ntpeters/vim-better-whitespace'
 
-" All of your "Plugins must be added before the following line
-"call vundle#end()            " required
+" All of your Plugins must be added before the following line
+" call vundle#end()            " required
 filetype plugin indent on    " required
 
 "
-let R_pdfviewer = "evince"
+" let R_pdfviewer = "evince"
 
 "
-let g:SimpylFold_docstring_preview=1
+" let g:SimpylFold_docstring_preview=1
 
 syntax on
 
@@ -143,7 +143,7 @@ set backspace=indent,eol,start
 set ruler
 
 " type russian with ease
-set keymap=russian-jcukenwin
+"set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
 
