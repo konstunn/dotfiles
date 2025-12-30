@@ -1,0 +1,14 @@
+# bash completion guard
+if [[ $- == *i* ]]; then
+  if ! type complete &>/dev/null; then
+    echo "warning: bash completion is not available" >&2
+    return
+  fi
+fi
+
+shopt -s progcomp_alias
+
+for file in "$HOME"/.bash_completion.d/*.sh; do
+  [ -r "$file" ] || continue
+  source "$file"
+done
