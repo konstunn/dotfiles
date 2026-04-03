@@ -17,7 +17,7 @@ if command -v docker compose >/dev/null 2>&1; then
 elif docker compose-version >/dev/null 2>&1; then
     COMPOSE_CMD="docker-compose"
 else
-    log "Docker Compose is not installed."
+    log "Docker Compose is not installed. Will not set up aliases for it."
     return 1 2>/dev/null || exit 1
 fi
 
