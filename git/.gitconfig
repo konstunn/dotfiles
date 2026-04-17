@@ -1,14 +1,18 @@
 [user]
   name = Konstantin G
   email = konstunn@users.noreply.github.com
+
 [core]
   editor = /usr/bin/vi
   pager = less -x4
   autocrlf = input
+
 [push] 
-  default = current  #
+  default = current
+
 [diff]
   tool = vimdiff
+
 [alias]
   d = diff
   ds = diff --staged
@@ -30,6 +34,9 @@
   push-skip-ci = push -o ci.skip
 [blame]
   coloring = highlightRecent
+
+[submodule]
+  recurse = true
 
 [include]
   path = ~/.gitconfig-private
